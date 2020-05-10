@@ -3,4 +3,8 @@
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Project</StartAction>
+    <StartProgram>C:\Users\mest2\Desktop\Estudos\Alura\Curso c# parte 4\csharpexceptions-projetoInicial\ByteBank\bin\Debug\ByteBank.exe</StartProgram>
+  </PropertyGroup>
 </Project>

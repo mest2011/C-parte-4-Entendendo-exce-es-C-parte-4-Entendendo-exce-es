@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
 
 namespace ByteBank
 {
@@ -10,6 +7,17 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
+            try
+            {
+                ContaCorrente contaCorrente = new ContaCorrente(1, 0);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine("Ocorreu uma exceção!");
+                Console.WriteLine("Nome da exceção: " + ex.ParamName);
+                Console.WriteLine(ex.Message);
+                Console.ReadLine();
+            }
             Console.ReadLine();
         }
     }
